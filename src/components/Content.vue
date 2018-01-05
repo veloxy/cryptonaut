@@ -33,12 +33,10 @@
       }
     },
     created () {
-      this.$http.get('https://api.coinmarketcap.com/v1/ticker/?limit=100&convert=EUR').then(resp => {
+      this.$http.get('https://api.sourcebox.be').then(resp => {
         this.coins = resp.data
         this.fromCoin = this.findCoin('XRB')
-        console.log(this.fromCoin)
         this.toCoin = this.findCoin('BTC')
-        console.log(this.toCoin)
       })
     },
     methods: {
@@ -48,13 +46,9 @@
         })
       },
       selectFromCoin (val) {
-        console.log('From')
-        console.log(val)
         this.fromCoin = val
       },
       selectToCoin (val) {
-        console.log('To')
-        console.log(val)
         this.toCoin = val
       }
     },
