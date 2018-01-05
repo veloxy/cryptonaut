@@ -2,6 +2,8 @@
 
 Small page that calculates the price per coin from one crypto currency when it reaches the market cap of another.
 
+https://veloxy.github.io/cryptonaut
+
 ![](http://sourcebox-screenshots.s3.amazonaws.com/nkjYidBX.png)
 
 ## Install
