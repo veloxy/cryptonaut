@@ -93,7 +93,7 @@
     display: inline-block;
 
     .dropdown-toggle {
-      border: none;
+      border: none !important;
       display: inline-block;
 
       input[type=search], input[type=search]:focus {
