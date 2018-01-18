@@ -33,7 +33,7 @@
       }
     },
     created () {
-      this.$http.get('https://api.sourcebox.be').then(resp => {
+      this.$http.get('https://cryptonaut.services.sourcebox.be').then(resp => {
         this.coins = resp.data
         this.fromCoin = this.findCoin('XRB')
         this.toCoin = this.findCoin('BTC')
